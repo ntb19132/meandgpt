@@ -7,9 +7,9 @@ function MeAndGPT() {
   const [showModal, setShowModal] = useState(false);
 
   const handleCardClick = (event) => {
-    if (event.target.id === "aboutGPTCard") {
+    if (event.currentTarget.id === "aboutGPTCard") {
       window.location.href = "https://openai.com/blog/chatgpt";
-    } else if (event.target.id === "learnMoreCard") {
+    } else if (event.currentTarget.id === "learnMoreCard") {
       window.location.href = "https://www.gatesnotes.com/The-Age-of-AI-Has-Begun";
     } else {
       setShowModal(true);
